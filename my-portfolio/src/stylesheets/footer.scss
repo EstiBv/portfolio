@@ -15,6 +15,8 @@
       background-image: url("../assets/icons/not-nicons.svg");
       background-repeat: no-repeat;
       width: 50px;
+      height: 20px;
+      position: relative;
       list-style-type: none;
       justify-items: baseline;
     }
@@ -29,7 +31,9 @@
       background-image: url("../assets/icons/mail-nicons.svg");
       background-repeat: no-repeat;
       width: 50px;
-      height: 18px;
+      height: 16px;
+      position: relative;
+      top: 2px;
       list-style-type: none;
       justify-items: baseline;
     }
@@ -37,6 +41,7 @@
       background-image: url("../assets/icons/in-nicons.svg");
       background-repeat: no-repeat;
       width: 50px;
+      height: 18px;
       list-style-type: none;
       justify-items: baseline;
     }
@@ -44,7 +49,9 @@
       background-image: url("../assets/icons/be-nicons.svg");
       background-repeat: no-repeat;
       width: 50px;
-      height: 20px;
+      height: 16px;
+      position: relative;
+      top: 2px;
       list-style-type: none;
       justify-items: baseline;
     }
