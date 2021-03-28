@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  justify-self: flex-end;
+  height: 50px;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #000;
+  &__menuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-notion {
+      background-image: url("../assets/icons/not-nicons.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-gitHub {
+      background-image: url("../assets/icons/git-nicons.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-email {
+      background-image: url("../assets/icons/mail-nicons.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 18px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-linkedin {
+      background-image: url("../assets/icons/in-nicons.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-behance {
+      background-image: url("../assets/icons/be-nicons.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 20px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+  }
+  &__copy {
+    line-height: 3.2;
+    padding-right: 40px;
+  }
+}
