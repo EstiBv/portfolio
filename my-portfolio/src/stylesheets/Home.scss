@@ -33,6 +33,7 @@
         text-decoration: none;
         bottom: 25px;
       }
+
       &-projects {
         background-image: url("../assets/icons/work-nicons.svg");
         background-repeat: no-repeat;
@@ -48,7 +49,15 @@
           position: relative;
           top: -20px;
         }
+        &-link:hover {
+          color: #ff8f71;
+          font-weight: 600;
+        }
       }
+      &-projects:hover {
+        background-image: url("../assets/icons/work-picons.svg");
+      }
+
       &-about {
         background-image: url("../assets/icons/about-nicons.svg");
         background-repeat: no-repeat;
@@ -61,12 +70,23 @@
         &-link {
           color: #000;
           font-size: 12px;
+
           position: relative;
           top: 50px;
         }
+        &-link:hover {
+          color: #ff8f71;
+          font-weight: 600;
+        }
+      }
+      &-about:hover {
+        background-image: url("../assets/icons/about-picons.svg");
       }
     }
   }
+  // &__menu:hover {
+  //   background-color: green;
+  // }
 }
 .home {
   background-image: url("../assets/icons/home-nicons.svg");

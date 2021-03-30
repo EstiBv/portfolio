@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
 import "../stylesheets/Home.scss";
-// import isotype from "../assets/icons/isoEB-ngicons.svg";
 
 const Home = () => {
   return (
