@@ -9,10 +9,11 @@
   border-top-color: #000;
   position: fixed;
   bottom: 0px;
+  padding-top: 15px;
   &__menuList {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding-left: 40px;
     &-notion {
       background-image: url("../assets/icons/not-nicons.svg");
       background-repeat: no-repeat;
@@ -87,7 +88,10 @@
     }
   }
   &__copy {
-    line-height: 3.2;
+    // line-height: 3.2;
     padding-right: 40px;
+    // padding-top: 8px;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
   }
 }

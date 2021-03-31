@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   &__isotype {
     background-image: url("../assets/icons/isoEB-ngicons.svg");
@@ -10,6 +10,7 @@
     height: 50vh;
     width: 50vh;
     align-self: center;
+    margin-bottom: 80px;
   }
   &__menu {
     position: absolute;
@@ -45,13 +46,15 @@
         top: 100px;
         &-link {
           color: #000;
+          font-family: "Roboto", sans-serif;
           font-size: 12px;
+          font-weight: 400;
           position: relative;
           top: -20px;
         }
         &-link:hover {
           color: #ff8f71;
-          font-weight: 600;
+          font-weight: 700;
         }
       }
       &-projects:hover {
@@ -70,13 +73,13 @@
         &-link {
           color: #000;
           font-size: 12px;
-
+          font-family: "Roboto", sans-serif;
           position: relative;
           top: 50px;
         }
         &-link:hover {
           color: #ff8f71;
-          font-weight: 600;
+          font-weight: 700;
         }
       }
       &-about:hover {
@@ -84,9 +87,6 @@
       }
     }
   }
-  // &__menu:hover {
-  //   background-color: green;
-  // }
 }
 .home {
   background-image: url("../assets/icons/home-nicons.svg");
