@@ -1,12 +1,18 @@
 import React from "react";
 import Footer from "./Footer";
-import "../stylesheets/Home.scss";
+import "../stylesheets/Landing.scss";
 
-const Home = () => {
+const Landing = (props) => {
+  const changeScreenLanding = (ev) => {
+    props.handleScreenLanding(ev);
+    console.log("screen", ev);
+  };
   return (
     <>
       <header>
-        <nav className="home" role="button" aria-pressed="false"></nav>
+        <nav className="home" role="button" aria-pressed="false">
+          {/* <a href="/"></a> */}
+        </nav>
       </header>
       <main className="main">
         <section
@@ -14,7 +20,11 @@ const Home = () => {
           role="figure"
           aria-labelledby="author's isotype"
         ></section>
-        <section className="main__menu" aria-labelledby="menu">
+        <aside
+          className="main__menu"
+          aria-labelledby="menu"
+          onMouseMove={changeScreenLanding}
+        >
           <ul className="main__menu-list">
             <li className="main__menu-list-projects">
               <a
@@ -35,11 +45,11 @@ const Home = () => {
               </a>
             </li>
           </ul>
-        </section>
+        </aside>
       </main>
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default Landing;

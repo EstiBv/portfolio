@@ -1,0 +1,135 @@
+.header {
+  background-color: black;
+  width: 100vw;
+  height: 0vh;
+}
+.headerHome {
+  background-color: transparent;
+  background-image: url("../assets/icons/isoEB-blicons.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 20px 0px 0px 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.mainScreen {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  &__isotype {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw;
+    height: 95vh;
+  }
+  &__infographic {
+    height: 60vh;
+    width: 60vh;
+    background-image: url("../assets/images/infogr-icons.svg");
+    background-repeat: no-repeat;
+    align-self: center;
+  }
+  &__menu {
+    background-color: white;
+    display: flex;
+    &-list {
+      list-style: none;
+      list-style-type: none;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-gap: 5px;
+      &-projectsLink {
+        text-decoration: none;
+      }
+      &-aboutLink {
+        text-decoration: none;
+      }
+
+      &-projects {
+        background-image: url("../assets/icons/work-nicons.svg");
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        width: 25px;
+        grid-column: 2;
+        grid-row: 2;
+        &-link {
+          color: #000;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          position: relative;
+          bottom: 25px;
+          right: 15px;
+        }
+        &-link:hover {
+          color: #ff8f71;
+          font-weight: 700;
+        }
+      }
+      &-projects:hover {
+        background-image: url("../assets/icons/work-picons.svg");
+      }
+
+      &-about {
+        background-image: url("../assets/icons/about-nicons.svg");
+        background-repeat: no-repeat;
+        height: 75px;
+        width: 25px;
+        grid-column: 2;
+        grid-row: 4;
+        text-align: center;
+        &-link {
+          color: #000;
+          font-size: 12px;
+          font-family: "Roboto", sans-serif;
+          position: relative;
+          top: 30px;
+        }
+        &-link:hover {
+          color: #ff8f71;
+          font-weight: 700;
+        }
+      }
+      &-about:hover {
+        background-image: url("../assets/icons/about-picons.svg");
+      }
+    }
+  }
+}
+// large phones
+// @media all and (min-width: 600px) {
+// }
+
+// tablets
+@media all and (min-width: 768px) {
+  .mainScreen {
+    &__infographic {
+      height: 75vh;
+      width: 75vh;
+    }
+    &__menu-list {
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 2px;
+      grid-template-rows: repeat(5, 1fr);
+      &-projects {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      &-about {
+        grid-column: 3;
+        grid-row: 4;
+      }
+    }
+  }
+}
+// // @media all and (min-width: 992px) {
+// }
+// @media all and (min-width: 1200px) {
+// }

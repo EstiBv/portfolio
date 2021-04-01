@@ -1,0 +1,97 @@
+.footerScreen {
+  display: flex;
+  justify-content: space-between;
+  justify-self: flex-end;
+  height: 50px;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #fff;
+  position: fixed;
+  bottom: 0px;
+  padding-top: 15px;
+
+  &__menuList {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+
+    &-notion {
+      background-image: url("../assets/icons/notion-blicons.svg");
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 18px;
+      position: relative;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-notion:hover {
+      background-image: url("../assets/icons/not-picons.svg");
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+    }
+    &-gitHub {
+      background-image: url("../assets/icons/gitHub-blicons.svg");
+      background-repeat: no-repeat;
+      width: 35px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-gitHub:hover {
+      background-image: url("../assets/icons/git-picons.svg");
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+    }
+    &-email {
+      background-image: url("../assets/icons/mail-blicons.svg");
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 15px;
+      position: relative;
+      top: 2px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-email:hover {
+      background-image: url("../assets/icons/mail-picons.svg");
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+    &-linkedin {
+      background-image: url("../assets/icons/in-blicons.svg");
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 17px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-linkedin:hover {
+      background-image: url("../assets/icons/in-picons.svg");
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+    &-behance {
+      background-image: url("../assets/icons/be-blicons.svg");
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 15px;
+      position: relative;
+      top: 2px;
+      list-style-type: none;
+      justify-items: baseline;
+    }
+    &-behance:hover {
+      background-image: url("../assets/icons/be-picons.svg");
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+    }
+    &-into {
+      padding: 10px;
+    }
+  }
+  &__copy {
+    padding-right: 25px;
+    font-size: 8px;
+    font-family: "Roboto", sans-serif;
+  }
+}
