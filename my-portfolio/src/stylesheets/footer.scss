@@ -1,3 +1,5 @@
+@import "./\ core/variables.scss";
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -6,7 +8,7 @@
   width: 100%;
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: #000;
+  border-top-color: $color-primary;
   position: fixed;
   bottom: 0px;
   padding-top: 15px;
@@ -18,7 +20,7 @@
       background-image: url("../assets/icons/not-nicons.svg");
       background-repeat: no-repeat;
       width: 35px;
-      height: 20px;
+      height: 18px;
       position: relative;
       list-style-type: none;
       justify-items: baseline;
@@ -44,7 +46,7 @@
       background-image: url("../assets/icons/mail-nicons.svg");
       background-repeat: no-repeat;
       width: 35px;
-      height: 16px;
+      height: 15px;
       position: relative;
       top: 2px;
       list-style-type: none;
@@ -59,7 +61,7 @@
       background-image: url("../assets/icons/in-nicons.svg");
       background-repeat: no-repeat;
       width: 35px;
-      height: 18px;
+      height: 17px;
       list-style-type: none;
       justify-items: baseline;
     }
@@ -72,7 +74,7 @@
       background-image: url("../assets/icons/be-nicons.svg");
       background-repeat: no-repeat;
       width: 35px;
-      height: 16px;
+      height: 15px;
       position: relative;
       top: 2px;
       list-style-type: none;
@@ -89,9 +91,9 @@
   }
   &__copy {
     // line-height: 3.2;
-    padding-right: 40px;
+    padding-right: 25px;
     // padding-top: 8px;
-    font-size: 10px;
+    font-size: 8px;
     font-family: "Roboto", sans-serif;
   }
 }

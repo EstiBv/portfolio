@@ -1,59 +1,75 @@
+@import "./\ core/variables.scss";
+.header {
+  background-color: $color-primary;
+  width: 100vw;
+  height: 0vh;
+}
+.home {
+  background-color: transparent;
+  background-image: url("../assets/icons/home-nicons.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 20px 0px 0px 40px;
+  border: none;
+  outline: none;
+}
+
 .main {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   height: 100vh;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
   &__isotype {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  &__infographic {
     background-image: url("../assets/icons/isoEB-ngicons.svg");
     background-repeat: no-repeat;
-    height: 50vh;
-    width: 50vh;
     align-self: center;
-    margin-bottom: 80px;
+    height: 60vh;
+    width: 60vh;
   }
   &__menu {
-    position: absolute;
-    right: 0px;
-    height: 80vh;
+    background-color: $color-white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     &-list {
       list-style: none;
       list-style-type: none;
-      padding-right: 80px;
       text-align: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-gap: 5px;
       &-projectsLink {
-        position: relative;
         text-decoration: none;
-        top: -5px;
       }
       &-aboutLink {
-        position: relative;
         text-decoration: none;
-        bottom: 25px;
       }
 
       &-projects {
         background-image: url("../assets/icons/work-nicons.svg");
         background-repeat: no-repeat;
-        height: 75px;
+        margin-top: 50px;
         width: 25px;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 100px;
+        grid-column: 2;
+        grid-row: 2;
         &-link {
-          color: #000;
+          color: $color-primary;
           font-family: "Roboto", sans-serif;
           font-size: 12px;
           font-weight: 400;
           position: relative;
-          top: -20px;
+          bottom: 25px;
+          right: 15px;
         }
         &-link:hover {
-          color: #ff8f71;
+          color: $color-secondary;
           font-weight: 700;
         }
       }
@@ -66,19 +82,18 @@
         background-repeat: no-repeat;
         height: 75px;
         width: 25px;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: 50px;
+        grid-column: 2;
+        grid-row: 4;
+        text-align: center;
         &-link {
-          color: #000;
+          color: $color-primary;
           font-size: 12px;
           font-family: "Roboto", sans-serif;
           position: relative;
-          top: 50px;
+          top: 30px;
         }
         &-link:hover {
-          color: #ff8f71;
+          color: $color-secondary;
           font-weight: 700;
         }
       }
@@ -88,12 +103,34 @@
     }
   }
 }
-.home {
-  background-image: url("../assets/icons/home-nicons.svg");
-  background-repeat: no-repeat;
-  height: 30px;
-  width: 80vw;
-  position: relative;
-  left: 40px;
-  top: 20px;
+
+// large phones
+// @media all and (min-width: 600px) {
+// }
+
+// tablets
+@media all and (min-width: 768px) {
+  .main {
+    &__infographic {
+      height: 75vh;
+      width: 75vh;
+    }
+    &__menu-list {
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 2px;
+      grid-template-rows: repeat(5, 1fr);
+      &-projects {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      &-about {
+        grid-column: 3;
+        grid-row: 4;
+      }
+    }
+  }
 }
+// // @media all and (min-width: 992px) {
+// }
+// @media all and (min-width: 1200px) {
+// }

@@ -9,17 +9,17 @@ const Landing = (props) => {
   };
   return (
     <>
-      <header>
-        <nav className="home" role="button" aria-pressed="false">
-          {/* <a href="/"></a> */}
-        </nav>
+      <header className="header">
+        <button className="home">{/* <a href="/"></a> */}</button>
       </header>
       <main className="main">
         <section
           className="main__isotype"
           role="figure"
           aria-labelledby="author's isotype"
-        ></section>
+        >
+          <figure className="main__infographic"></figure>
+        </section>
         <aside
           className="main__menu"
           aria-labelledby="menu"

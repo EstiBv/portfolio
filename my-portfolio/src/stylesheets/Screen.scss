@@ -1,5 +1,7 @@
+@import "./\ core/variables.scss";
+
 .header {
-  background-color: black;
+  background-color: $color-primary;
   width: 100vw;
   height: 0vh;
 }
@@ -16,7 +18,7 @@
 }
 .mainScreen {
   height: 100vh;
-  background-color: black;
+  background-color: $color-primary;
   display: flex;
   justify-content: flex-end;
   &__isotype {
@@ -25,7 +27,7 @@
     flex-direction: row;
     position: absolute;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
   }
   &__infographic {
     height: 60vh;
@@ -35,7 +37,7 @@
     align-self: center;
   }
   &__menu {
-    background-color: white;
+    background-color: $color-white;
     display: flex;
     &-list {
       list-style: none;
@@ -60,7 +62,7 @@
         grid-column: 2;
         grid-row: 2;
         &-link {
-          color: #000;
+          color: $color-primary;
           font-family: "Roboto", sans-serif;
           font-size: 12px;
           font-weight: 400;
@@ -69,7 +71,7 @@
           right: 15px;
         }
         &-link:hover {
-          color: #ff8f71;
+          color: $color-secondary;
           font-weight: 700;
         }
       }
@@ -86,14 +88,14 @@
         grid-row: 4;
         text-align: center;
         &-link {
-          color: #000;
+          color: $color-primary;
           font-size: 12px;
           font-family: "Roboto", sans-serif;
           position: relative;
           top: 30px;
         }
         &-link:hover {
-          color: #ff8f71;
+          color: $color-secondary;
           font-weight: 700;
         }
       }

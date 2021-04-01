@@ -22,11 +22,11 @@ function App() {
     <>
       <Switch>
         <Route exact path="/">
-          <Screen />
-          {/* <Landing
+          {/* <Screen /> */}
+          <Landing
             screenLanding={screenLanding}
             handleScreenLanding={handleScreenLanding}
-          /> */}
+          />
         </Route>
         <Route path="/index" component={Categories} />
       </Switch>

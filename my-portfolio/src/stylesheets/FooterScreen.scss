@@ -1,3 +1,5 @@
+@import "./\ core/variables.scss";
+
 .footerScreen {
   display: flex;
   justify-content: space-between;
@@ -6,7 +8,7 @@
   width: 100%;
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: #fff;
+  border-top-color: $color-white;
   position: fixed;
   bottom: 0px;
   padding-top: 15px;
