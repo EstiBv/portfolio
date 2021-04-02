@@ -31,12 +31,13 @@
     background-image: url("../assets/icons/isoEB-ngicons.svg");
     background-repeat: no-repeat;
     align-self: center;
-    height: 60vh;
-    width: 60vh;
+    height: 50vh;
+    width: 50vh;
   }
   &__menu {
     background-color: $color-white;
     display: flex;
+    cursor: pointer;
     &-list {
       list-style: none;
       list-style-type: none;
@@ -45,14 +46,15 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(5, 1fr);
       grid-gap: 5px;
-      &-projectsLink {
-        text-decoration: none;
-      }
-      &-aboutLink {
-        text-decoration: none;
-      }
+      // &-projectsLink {
+      //   text-decoration: none;
+      // }
+      // &-aboutLink {
+      //   text-decoration: none;
+      // }
 
       &-projects {
+        text-decoration: none;
         background-image: url("../assets/icons/work-nicons.svg");
         background-repeat: no-repeat;
         margin-top: 50px;
@@ -78,6 +80,7 @@
       }
 
       &-about {
+        text-decoration: none;
         background-image: url("../assets/icons/about-nicons.svg");
         background-repeat: no-repeat;
         height: 75px;
@@ -90,7 +93,7 @@
           font-size: 12px;
           font-family: "Roboto", sans-serif;
           position: relative;
-          top: 30px;
+          top: 35px;
         }
         &-link:hover {
           color: $color-secondary;
@@ -112,8 +115,8 @@
 @media all and (min-width: 768px) {
   .main {
     &__infographic {
-      height: 75vh;
-      width: 75vh;
+      height: 60vh;
+      width: 60vh;
     }
     &__menu-list {
       grid-template-columns: repeat(6, 1fr);

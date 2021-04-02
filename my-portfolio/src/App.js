@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Route, Switch } from "react-router";
+import { Route } from "react-router";
 import "./App.scss";
 // components
-import Categories from "./components/Categories";
+import Projects from "./components/Projects";
 import Landing from "./components/Landing";
-import Screen from "./components/Screen";
+// import Screen from "./components/Screen";
+import About from "./components/About";
 
 function App() {
   const [screenLanding, setScreenLanding] = useState(false);
@@ -20,16 +21,19 @@ function App() {
   };
   return (
     <>
-      <Switch>
-        <Route exact path="/">
-          {/* <Screen /> */}
-          <Landing
-            screenLanding={screenLanding}
-            handleScreenLanding={handleScreenLanding}
-          />
-        </Route>
-        <Route path="/index" component={Categories} />
-      </Switch>
+      <Route exact path="/">
+        {/* <Screen /> */}
+        <Landing
+          screenLanding={screenLanding}
+          handleScreenLanding={handleScreenLanding}
+        />
+      </Route>
+      <Route path="/projects">
+        <Projects />
+      </Route>
+      <Route path="/about">
+        <About></About>
+      </Route>
     </>
   );
 }
