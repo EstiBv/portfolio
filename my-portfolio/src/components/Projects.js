@@ -1,19 +1,34 @@
 import React from "react";
-import { Route, Switch } from "react-router";
 import Develop from "./subIndex.js/Develop";
 import Design from "./subIndex.js/Design";
 import Art from "./subIndex.js/Art";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
   return (
     <>
       <div>Hola projects</div>
-      <Switch>
-        <Route path="/develop" component={Develop} />
-        <Route path="/design" component={Design} />
-        <Route path="/art" component={Art} />
-      </Switch>
+      <ul>
+        <li>
+          <Link to="/project/develop">
+            <Develop>Develop</Develop>
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/project/design">
+            <Design>Design</Design>
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/project/art">
+            <Art>Art</Art>
+          </Link>
+        </li>
+      </ul>
+
       <Footer />
     </>
   );
