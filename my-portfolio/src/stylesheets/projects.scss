@@ -1,4 +1,6 @@
 @import "./\ core/variables.scss";
+
+// section container projects
 .mainProjects {
   height: 100vh;
   display: flex;
@@ -38,7 +40,9 @@
     width: 25%;
   }
 }
+// aside menu
 .menu__list {
+  margin-right: 40px;
   list-style: none;
   list-style-type: none;
   text-align: center;
@@ -54,7 +58,7 @@
     width: 25px;
     grid-column: 2;
     grid-row: 2;
-    &-project {
+    &-projects {
       color: $color-primary;
       font-family: "Roboto", sans-serif;
       font-size: 12px;
@@ -63,7 +67,19 @@
       bottom: 25px;
       right: 15px;
     }
+    &-projects:hover {
+      color: $color-secondary;
+      font-weight: 700;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
   }
+  &-linkProjects:hover {
+    background-image: url("../assets/icons/work-picons.svg");
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+
   &-linkAbout {
     text-decoration: none;
     background-image: url("../assets/icons/about-nicons.svg");
@@ -73,12 +89,23 @@
     grid-column: 2;
     grid-row: 4;
     text-align: center;
-    &-aboout {
+    &-about {
       color: $color-primary;
       font-size: 12px;
       font-family: "Roboto", sans-serif;
       position: relative;
       top: 35px;
     }
+    &-about:hover {
+      color: $color-secondary;
+      font-weight: 700;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &-linkAbout:hover {
+    background-image: url("../assets/icons/about-picons.svg");
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
   }
 }

@@ -7,14 +7,18 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../stylesheets/header.scss";
 import "../stylesheets/projects.scss";
-import "../stylesheets/Landing.scss";
+// import "../stylesheets/Landing.scss";
 
 const Categories = () => {
   return (
     <>
       <main className="mainProjects">
         <Header className="mainProjects__home" />
-        <section className="mainProjects__containerProjects">
+        <section
+          className="mainProjects__containerProjects"
+          role="list"
+          aria-labelledby="projects's categories"
+        >
           <ul className="containerProjects__listSection">
             <li className="containerProjects__listSection-dev">
               <Link to="/project/develop">

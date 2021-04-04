@@ -13,47 +13,25 @@ const Landing = (props) => {
       <header className="header">
         <button className="home">{/* <a href="/"></a> */}</button>
       </header>
-      <main className="main">
+      <main className="mainLanding">
         <section
-          className="main__isotype"
+          className="mainLanding__isotype"
           role="figure"
           aria-labelledby="author's isotype"
         >
-          <figure className="main__infographic"></figure>
+          <figure className="mainLanding__infographic"></figure>
         </section>
         <aside
-          className="main__menu"
+          className="mainLanding__menu"
           aria-labelledby="menu"
           onMouseMove={changeScreenLanding}
         >
-          <ul className="main__menu-list">
-            <Link to="/projects" className="main__menu-list-projects">
-              <li className="main__menu-list-projects-link">
-                {" "}
-                Proyectos
-                {/* <a
-                  title="projects"
-                  href="/projects"
-                  className="main__menu-list-projectsLink"
-                > */}
-                {/* <span className="main__menu-list-projects-link">
-                    Proyectos
-                  </span>
-                </a> */}
-              </li>
+          <ul className="menu__list">
+            <Link to="/projects" className="menu__list-linkProjects">
+              <li className="menu__list-linkProjects-projects"> Proyectos</li>
             </Link>
-            <Link to="/about" className="main__menu-list-about">
-              <li className="main__menu-list-about-link">
-                {" "}
-                Sobre mí
-                {/* <a
-                  title="about"
-                  href="/about"
-                  className="main__menu-list-aboutLink"
-                >
-                  <span className="main__menu-list-about-link">Sobre mí</span>
-                </a> */}
-              </li>
+            <Link to="/about" className="menu__list-linkAbout">
+              <li className="menu__list-linkAbout-about"> Sobre mí</li>
             </Link>
           </ul>
         </aside>

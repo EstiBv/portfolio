@@ -14,8 +14,8 @@
   border: none;
   outline: none;
 }
-
-.main {
+// section container projects
+.mainLanding {
   height: 100vh;
   display: flex;
   justify-content: flex-end;
@@ -23,7 +23,6 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    // position: absolute;
     width: 100vw;
     height: 100vh;
   }
@@ -31,84 +30,84 @@
     background-image: url("../assets/icons/isoEB-ngicons.svg");
     background-repeat: no-repeat;
     align-self: center;
+    background-position: center;
     height: 45vh;
     width: 45vh;
   }
   &__menu {
-    background-color: $color-white;
     display: flex;
-
-    &-list {
-      list-style: none;
-      list-style-type: none;
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-gap: 5px;
-
-      // &-projectsLink {
-      //   text-decoration: none;
-      // }
-      // &-aboutLink {
-      //   text-decoration: none;
-      // }
-
-      &-projects {
-        text-decoration: none;
-        background-image: url("../assets/icons/work-nicons.svg");
-        background-repeat: no-repeat;
-        margin-top: 50px;
-        width: 25px;
-        grid-column: 2;
-        grid-row: 2;
-
-        &-link {
-          color: $color-primary;
-          font-family: "Roboto", sans-serif;
-          font-size: 12px;
-          font-weight: 400;
-          position: relative;
-          bottom: 25px;
-          right: 15px;
-        }
-        &-link:hover {
-          color: $color-secondary;
-          font-weight: 700;
-        }
-      }
-      &-projects:hover {
-        background-image: url("../assets/icons/work-picons.svg");
-      }
-
-      &-about {
-        text-decoration: none;
-        background-image: url("../assets/icons/about-nicons.svg");
-        background-repeat: no-repeat;
-        height: 75px;
-        width: 25px;
-        grid-column: 2;
-        grid-row: 4;
-        text-align: center;
-        &-link {
-          color: $color-primary;
-          font-size: 12px;
-          font-family: "Roboto", sans-serif;
-          position: relative;
-          top: 35px;
-        }
-        &-link:hover {
-          color: $color-secondary;
-          font-weight: 700;
-        }
-      }
-      &-about:hover {
-        background-image: url("../assets/icons/about-picons.svg");
-      }
-    }
   }
 }
 
+// aside menu
+.menu__list {
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+  &-linkProjects {
+    text-decoration: none;
+    background-image: url("../assets/icons/work-nicons.svg");
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 25px;
+    grid-column: 2;
+    grid-row: 2;
+    &-projects {
+      color: $color-primary;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      position: relative;
+      bottom: 25px;
+      right: 15px;
+    }
+    &-projects:hover {
+      color: $color-secondary;
+      font-weight: 700;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &-linkProjects:hover {
+    background-image: url("../assets/icons/work-picons.svg");
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  &-linkAbout {
+    text-decoration: none;
+    background-image: url("../assets/icons/about-nicons.svg");
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 25px;
+    grid-column: 2;
+    grid-row: 4;
+    text-align: center;
+    &-about {
+      color: $color-primary;
+      font-size: 12px;
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      top: 35px;
+    }
+    &-about:hover {
+      color: $color-secondary;
+      font-weight: 700;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &-linkAbout:hover {
+    background-image: url("../assets/icons/about-picons.svg");
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// MEDIAQUERIES
 // large phones
 // @media all and (min-width: 600px) {
 // }
