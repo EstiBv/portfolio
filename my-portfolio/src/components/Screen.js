@@ -16,7 +16,11 @@ const Screen = () => {
         >
           <figure className="mainScreen__infographic"></figure>
         </section>
-        <aside className="mainScreen__menu" aria-labelledby="menu">
+        <aside
+          className="mainScreen__menu"
+          aria-labelledby="menu"
+          role="navigation"
+        >
           <ul className="mainScreen__menu-list">
             <li className="mainScreen__menu-list-projects">
               <a

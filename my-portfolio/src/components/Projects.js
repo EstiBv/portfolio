@@ -14,32 +14,43 @@ const Categories = () => {
     <>
       <main className="mainProjects">
         <Header className="mainProjects__home" />
-        <section
+        <nav
           className="mainProjects__containerProjects"
-          role="list"
+          role="navigation"
           aria-labelledby="projects's categories"
         >
-          <ul className="containerProjects__listSection">
-            <li className="containerProjects__listSection-dev">
-              <Link to="/project/develop">
-                <Develop>Develop</Develop>
-              </Link>
-            </li>
-            <li className="containerProjects__listSection-des">
-              {" "}
-              <Link to="/project/design">
+          {/* <ul className="containerProjects__listSection"> */}
+          <Link to="/project/develop" className="linksSections">
+            {/* <li className="containerProjects__listSection-dev">Develop</li> */}
+            <div className="mainProjects__containerProjects-infoDev">
+              <Develop />
+            </div>
+          </Link>
+          <Link to="/project/design" className="linksSections">
+            {/* <li className="containerProjects__listSection-des">
+                {" "}
                 <Design>Design</Design>
-              </Link>
-            </li>
-            <li className="containerProjects__listSection-art">
-              {" "}
-              <Link to="/project/art">
+              </li> */}
+            <div className="mainProjects__containerProjects-infoDev">
+              <Develop />
+            </div>
+          </Link>
+          <Link to="/project/art" className="linksSections">
+            {/* <li className="containerProjects__listSection-art">
+                {" "}
                 <Art>Art</Art>
-              </Link>
-            </li>
-          </ul>
-        </section>
-        <aside className="mainProjects__menu" aria-labelledby="menu">
+              </li> */}
+            <div className="mainProjects__containerProjects-infoDev">
+              <Develop />
+            </div>
+          </Link>
+          {/* </ul> */}
+        </nav>
+        <aside
+          className="mainProjects__menu"
+          aria-labelledby="menu"
+          role="navigation"
+        >
           <ul className="menu__list">
             <Link to="/projects" className="menu__list-linkProjects">
               <li className="menu__list-linkProjects-projects"> Proyectos</li>

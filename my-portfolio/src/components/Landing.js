@@ -24,6 +24,7 @@ const Landing = (props) => {
         <aside
           className="mainLanding__menu"
           aria-labelledby="menu"
+          role="navigation"
           onMouseMove={changeScreenLanding}
         >
           <ul className="menu__list">
