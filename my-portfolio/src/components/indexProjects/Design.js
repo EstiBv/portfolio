@@ -1,7 +1,8 @@
 import React from "react";
+import InfoDesign from "./infographics/InfoDesign";
 
 const Design = () => {
-  return <div> Design </div>;
+  return <InfoDesign />;
 };
 
 export default Design;

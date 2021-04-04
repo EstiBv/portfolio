@@ -1,13 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import Develop from "./subIndex.js/Develop";
-import Design from "./subIndex.js/Design";
-import Art from "./subIndex.js/Art";
+import Develop from "./indexProjects/Develop";
+import Design from "./indexProjects/Design";
+// import Art from "./indexProjects/Art";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../stylesheets/header.scss";
 import "../stylesheets/projects.scss";
-// import "../stylesheets/Landing.scss";
 
 const Categories = () => {
   return (
@@ -19,32 +18,39 @@ const Categories = () => {
           role="navigation"
           aria-labelledby="projects's categories"
         >
-          {/* <ul className="containerProjects__listSection"> */}
-          <Link to="/project/develop" className="linksSections">
-            {/* <li className="containerProjects__listSection-dev">Develop</li> */}
-            <div className="mainProjects__containerProjects-infoDev">
+          <Link
+            to="/project/develop"
+            className="mainProjects__devProjects linksSections"
+          >
+            <figure
+              className="mainProjects__containerProjects-develop"
+              role="img"
+            >
               <Develop />
-            </div>
+              <figcaption className="mainProjects__containerProjects-text">
+                Develop
+              </figcaption>
+            </figure>
           </Link>
-          <Link to="/project/design" className="linksSections">
-            {/* <li className="containerProjects__listSection-des">
-                {" "}
-                <Design>Design</Design>
-              </li> */}
-            <div className="mainProjects__containerProjects-infoDev">
-              <Develop />
-            </div>
+          <Link
+            to="/project/design"
+            className="mainProjects__desProjects linksSections"
+          >
+            <figure
+              className="mainProjects__containerProjects-design"
+              role="img"
+            >
+              <Design />
+              <figcaption className="mainProjects__containerProjects-text">
+                Design
+              </figcaption>
+            </figure>
           </Link>
           <Link to="/project/art" className="linksSections">
-            {/* <li className="containerProjects__listSection-art">
-                {" "}
-                <Art>Art</Art>
-              </li> */}
             <div className="mainProjects__containerProjects-infoDev">
-              <Develop />
+              {/* <Develop /> */}
             </div>
           </Link>
-          {/* </ul> */}
         </nav>
         <aside
           className="mainProjects__menu"

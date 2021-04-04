@@ -6,9 +6,9 @@ import Projects from "./components/Projects";
 import Landing from "./components/Landing";
 // import Screen from "./components/Screen";
 import About from "./components/About";
-import Develop from "./components/subIndex.js/Develop";
-import Design from "./components/subIndex.js/Design";
-import Art from "./components/subIndex.js/Art";
+import Develop from "./components/indexProjects/Develop";
+import Design from "./components/indexProjects/Design";
+import Art from "./components/indexProjects/Art";
 
 function App() {
   const [screenLanding, setScreenLanding] = useState(false);

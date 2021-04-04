@@ -1,11 +1,10 @@
 @import "../../\ core/variables.scss";
 
-/*Initial - develop*/
-.container {
+.containerDevelop {
   display: flex;
-  &__circleArea {
-    height: 80px;
-    width: 80px;
+  &__areaDevelop {
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background-color: $color-primary;
     z-index: 1;
@@ -13,7 +12,7 @@
     bottom: 35px;
     left: -30px;
   }
-  &__stackArea {
+  &__stackDevelop {
     width: 90px;
     height: 130px;
     border: 2px solid $color-primary;
@@ -24,61 +23,54 @@
     border-bottom: 2px solid transparent;
     border-top: 2px dashed #040404;
 
-    // width: 150px;
-    // border-radius: 45%;
-    // border-top: 2px dashed $color-primary;
-    // border-top-right-radius: 48px;
-    // position: relative;
-    // display: inline-block;
-    // transform: rotate(300deg);
     &-line0 {
-      height: 25px;
+      height: 20px;
       width: 3px;
       background-color: $color-primary;
       position: relative;
       display: inline-block;
-      left: -2px;
+      left: 0px;
       top: 34px;
-      transform: rotate(0.25turn);
-    }
-    &-line1 {
-      height: 25px;
-      width: 3px;
-      background-color: $color-secondary;
-      position: relative;
-      display: inline-block;
-      left: 1px;
-      bottom: -15px;
       transform: rotate(0.3turn);
     }
-    &-line2 {
-      height: 25px;
+    &-line1 {
+      height: 20px;
       width: 3px;
       background-color: $color-secondary;
       position: relative;
       display: inline-block;
-      left: 9px;
-      bottom: 2px;
+      left: 4px;
+      bottom: -16px;
+      transform: rotate(0.33turn);
+    }
+    &-line2 {
+      height: 20px;
+      width: 3px;
+      background-color: $color-secondary;
+      position: relative;
+      display: inline-block;
+      left: 12px;
+      bottom: -4px;
       transform: rotate(0.86turn);
     }
     &-line3 {
-      height: 25px;
+      height: 20px;
       width: 3px;
       background-color: $color-secondary;
       position: relative;
       display: inline-block;
-      left: 20px;
-      bottom: 12px;
+      left: 21px;
+      bottom: 6px;
       transform: rotate(0.42turn);
     }
     &-line4 {
-      height: 25px;
+      height: 20px;
       width: 3px;
       background-color: $color-secondary;
       position: relative;
       display: inline-block;
       left: 33px;
-      bottom: 17px;
+      bottom: 12px;
       transform: rotate(0.46turn);
     }
   }
@@ -88,8 +80,8 @@
     border-color: transparent transparent transparent $color-white;
     position: relative;
     display: inline-block;
-    top: 30px;
-    left: 25px;
+    top: 26px;
+    left: 20px;
   }
   .triangle2 {
     border-style: solid;
@@ -97,8 +89,8 @@
     border-color: $color-white transparent transparent transparent;
     position: relative;
     display: inline-block;
-    top: 15px;
-    left: 20px;
+    top: 10px;
+    left: 15px;
   }
   .triangle3 {
     border-style: solid;
@@ -106,15 +98,16 @@
     border-color: transparent transparent $color-secondary transparent;
     position: relative;
     display: inline-block;
-    top: 35px;
+    top: 32px;
+    left: -5px;
   }
   .triangle4 {
     border-style: solid;
     border-width: 10px 10px 10px 0px;
     border-color: transparent $color-white transparent transparent;
     position: relative;
-    top: 30px;
-    left: -5px;
+    top: 27px;
+    left: -9px;
     display: inline-block;
   }
 }

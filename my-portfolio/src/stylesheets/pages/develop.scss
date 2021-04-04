@@ -1,0 +1,11 @@
+@import "../\ core/variables.scss";
+
+.text-develop {
+  color: $color-primary;
+}
+.text-develop:hover {
+  color: $color-secondary;
+  font-size: x-large;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
