@@ -1,3 +1,4 @@
+@import "../../\ core/variables.scss";
 .containerDesign {
   // margin-top: 50px;
   display: inline-block;
@@ -12,34 +13,34 @@
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-color: black;
+    background-color: $color-primary;
     z-index: 1;
     position: relative;
     display: inline-block;
-    left: 8px;
+    left: 18px;
     top: 45px;
   }
   &__stackDesign {
     width: 0px;
     height: 150px;
-    right: 27px;
+    right: 17px;
     bottom: 100px;
     position: relative;
     display: inline-block;
-    border-left: 2px dashed #040404;
+    border-left: 2px dashed $color-primary;
     border-top: 0px dashed transparent;
     border-bottom: 2px solid transparent;
     &-line0 {
       position: relative;
       width: 20px;
-      border: 2px solid #ff8400;
+      border: 2px solid $color-secondary;
       right: 11px;
       top: 54px;
     }
     &-line1 {
       position: relative;
       width: 20px;
-      border: 2px solid #ff8400;
+      border: 2px solid $color-secondary;
       right: 12px;
       top: 29px;
     }
@@ -50,14 +51,14 @@
     width: 160px;
     left: 40px;
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid $color-primary;
     border-bottom: transparent;
     border-left: transparent;
     border-right: transparent;
     &--box1 {
       height: 20px;
       width: 20px;
-      background-color: #ff8400;
+      background-color: $color-secondary;
       position: relative;
       display: inline-block;
       left: -20px;
@@ -66,7 +67,7 @@
     &--box1B {
       height: 22px;
       width: 22px;
-      border: 2px solid black;
+      border: 1px solid $color-primary;
       position: relative;
       display: inline-block;
       right: -140px;
@@ -75,18 +76,18 @@
   }
   &__lineV2 {
     position: relative;
-    display: inline-block;
-    right: 110px;
-    bottom: 42px;
+    // display: inline-block;
+    left: 50px;
+    bottom: 66px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid $color-primary;
     border-top: transparent;
     border-right: transparent;
     border-bottom: transparent;
     &--box2 {
       height: 20px;
       width: 20px;
-      border: 1px solid black;
+      border: 1px solid $color-primary;
       display: inline-block;
       position: relative;
       right: 11px;
@@ -95,17 +96,17 @@
   }
   &__lineV3 {
     position: relative;
-    display: inline-block;
-    bottom: 45px;
+    bottom: 85px;
+    left: 150px;
     height: 90px;
-    border: 1px solid black;
+    border: 1px solid $color-primary;
     border-bottom: transparent;
     border-top: transparent;
     border-right: transparent;
     &--box3 {
       height: 30px;
       width: 30px;
-      border: 1px solid black;
+      border: 1px solid $color-primary;
       position: relative;
       display: inline-block;
       left: -13px;
@@ -114,7 +115,7 @@
     &--box3B {
       height: 20px;
       width: 20px;
-      border: 1px solid black;
+      border: 1px solid $color-primary;
       position: relative;
       display: inline-block;
       bottom: -118px;
@@ -122,9 +123,9 @@
   }
   &__lineD4 {
     position: relative;
-    display: inline-block;
-    left: -19px;
-    bottom: 14px;
+    // display: inline-block;
+    bottom: 180px;
+    left: 151px;
     height: 50px;
     border: 1px solid black;
     transform: rotate(-30deg);
