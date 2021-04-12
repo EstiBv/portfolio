@@ -1,0 +1,166 @@
+@import "../../\ core/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__circleArea {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    z-index: 1;
+    &-pointsArea {
+      position: relative;
+      display: inline-block;
+      align-items: center;
+      left: 10px;
+      top: 10px;
+      background-color: red;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      &-list {
+        position: relative;
+        list-style-type: circle;
+        &-point1 {
+          position: relative;
+          left: 55px;
+          bottom: 10px;
+        }
+        &-point2 {
+          position: relative;
+          left: 72px;
+          bottom: 18px;
+        }
+        &-point3 {
+          position: relative;
+          left: 85px;
+          bottom: 20px;
+        }
+        &-point4 {
+          position: relative;
+          left: 90px;
+          bottom: 17px;
+        }
+        &-point5 {
+          position: relative;
+          left: 87px;
+          bottom: 15px;
+        }
+        &-point6 {
+          position: relative;
+          left: 77px;
+          bottom: 15px;
+        }
+        &-point7 {
+          position: relative;
+          left: 60px;
+          bottom: 21px;
+        }
+        &-point8 {
+          position: relative;
+          left: 40px;
+          bottom: 36px;
+        }
+        &-point9 {
+          position: relative;
+          left: 20px;
+          bottom: 58px;
+        }
+        &-point10 {
+          position: relative;
+          right: -4px;
+          bottom: 87px;
+        }
+        &-point11 {
+          position: relative;
+          left: -7px;
+          bottom: 120px;
+        }
+        &-point12 {
+          position: relative;
+          left: -11px;
+          bottom: 157px;
+        }
+        &-point13 {
+          position: relative;
+          left: -9px;
+          bottom: 193px;
+        }
+        &-point14 {
+          position: relative;
+          left: 1px;
+          bottom: 227px;
+        }
+        &-point15 {
+          position: relative;
+          left: 15px;
+          bottom: 259px;
+        }
+        &-point16 {
+          position: relative;
+          left: 34px;
+          bottom: 281px;
+        }
+      }
+    }
+    &-projects {
+      position: relative;
+      bottom: 250px;
+      width: 140px;
+      height: 12px;
+      left: 140px;
+      display: inline-block;
+      border: 1px solid #040404;
+      border-bottom: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      &-circle {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        background-color: green;
+      }
+    }
+  }
+
+  &__stackArea {
+    display: inline-block;
+    width: 0px;
+    left: 75px;
+    height: 200px;
+    top: 150px;
+
+    border: 2px dashed black;
+    &--line0 {
+      position: relative;
+      width: 30px;
+      border: 2px solid #ff8400;
+      right: 17px;
+      top: 50px;
+    }
+    &--line1 {
+      position: relative;
+      width: 30px;
+      border: 2px solid #ff8400;
+      right: 17px;
+      top: 75px;
+    }
+    &--line3 {
+      position: relative;
+      width: 30px;
+      border: 2px solid #ff8400;
+      right: 17px;
+      top: 100px;
+    }
+    &--line4 {
+      position: relative;
+      width: 30px;
+      border: 2px solid #ff8400;
+      right: 17px;
+      top: 125px;
+    }
+  }
+}

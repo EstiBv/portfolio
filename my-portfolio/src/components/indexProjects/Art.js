@@ -1,7 +1,8 @@
 import React from "react";
 
+import InfoArt from "./infographics/InfoArt";
 const Art = () => {
-  return <div>Art</div>;
+  return <InfoArt />;
 };
 
 export default Art;

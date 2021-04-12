@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Develop from "./indexProjects/Develop";
 import Design from "./indexProjects/Design";
-// import Art from "./indexProjects/Art";
+import Art from "./indexProjects/Art";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../stylesheets/header.scss";
@@ -46,10 +46,16 @@ const Categories = () => {
               </figcaption>
             </figure>
           </Link>
-          <Link to="/project/art" className="linksSections">
-            <div className="mainProjects__containerProjects-infoDev">
-              {/* <Develop /> */}
-            </div>
+          <Link
+            to="/project/art"
+            className="mainProjects__artProjects linksSections"
+          >
+            <figure className="mainProjects__containerProjects-art" role="img">
+              <Art />
+              <figcaption className="mainProjects__containerProjects-text">
+                Art
+              </figcaption>
+            </figure>
           </Link>
         </nav>
         <aside
