@@ -1,12 +1,12 @@
 @import "../../\ core/variables.scss";
-.container {
+.containerArt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   &__circleArea {
-    height: 150px;
-    width: 150px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background-color: black;
     display: inline-block;
@@ -17,92 +17,108 @@
       align-items: center;
       left: 10px;
       top: 10px;
-      background-color: red;
       height: 130px;
       width: 130px;
       border-radius: 50%;
       &-list {
         position: relative;
         list-style-type: circle;
+        display: inline-block;
         &-point1 {
           position: relative;
           left: 55px;
           bottom: 10px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point2 {
           position: relative;
           left: 72px;
           bottom: 18px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point3 {
           position: relative;
           left: 85px;
           bottom: 20px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point4 {
           position: relative;
           left: 90px;
           bottom: 17px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point5 {
           position: relative;
           left: 87px;
           bottom: 15px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point6 {
           position: relative;
           left: 77px;
           bottom: 15px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point7 {
           position: relative;
           left: 60px;
           bottom: 21px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point8 {
           position: relative;
           left: 40px;
           bottom: 36px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point9 {
           position: relative;
           left: 20px;
           bottom: 58px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point10 {
           position: relative;
           right: -4px;
           bottom: 87px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point11 {
           position: relative;
           left: -7px;
           bottom: 120px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point12 {
           position: relative;
           left: -11px;
           bottom: 157px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point13 {
           position: relative;
           left: -9px;
           bottom: 193px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point14 {
           position: relative;
           left: 1px;
           bottom: 227px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point15 {
           position: relative;
           left: 15px;
           bottom: 259px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
         &-point16 {
           position: relative;
           left: 34px;
           bottom: 281px;
+          list-style-image: url(../../../assets/images/point.svg);
         }
       }
     }
@@ -127,39 +143,42 @@
   }
 
   &__stackArea {
-    display: inline-block;
     width: 0px;
-    left: 75px;
-    height: 200px;
-    top: 150px;
+    height: 150px;
+    right: -2px;
+    top: 0px;
+    position: relative;
+    display: inline-block;
+    border-left: 2px dashed #040404;
+    border-top: 0px dashed transparent;
+    border-bottom: 2px solid transparent;
 
-    border: 2px dashed black;
     &--line0 {
       position: relative;
-      width: 30px;
-      border: 2px solid #ff8400;
-      right: 17px;
+      width: 20px;
+      border: 2px solid #ff8f71;
+      right: 11px;
       top: 50px;
     }
     &--line1 {
       position: relative;
-      width: 30px;
-      border: 2px solid #ff8400;
-      right: 17px;
+      width: 20px;
+      border: 2px solid #ff8f71;
+      right: 11px;
       top: 75px;
     }
     &--line3 {
       position: relative;
-      width: 30px;
-      border: 2px solid #ff8400;
-      right: 17px;
+      width: 20px;
+      border: 2px solid #ff8f71;
+      right: 11px;
       top: 100px;
     }
     &--line4 {
       position: relative;
-      width: 30px;
-      border: 2px solid #ff8400;
-      right: 17px;
+      width: 20px;
+      border: 2px solid #ff8f71;
+      right: 11px;
       top: 125px;
     }
   }
