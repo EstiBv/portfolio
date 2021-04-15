@@ -7,11 +7,11 @@
   justify-content: flex-end;
   &__containerProjects {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     &-develop {
       padding-right: 70%;
     }
@@ -33,18 +33,25 @@
       transition: all 0.3s ease-in-out;
       transform: scale(1.3);
     }
-    &-text {
+    &-textDev {
       color: $color-primary;
       text-align: center;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
     }
-    &-text:hover {
+    &-textDev:hover {
       color: $color-secondary;
       text-align: center;
       font-family: "Roboto", sans-serif;
       font-weight: bolder;
       transition: all 0.2s ease-in-out;
+    }
+    &-textDes {
+      color: $color-primary;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      margin-bottom: 40px;
     }
   }
   &__menu {
