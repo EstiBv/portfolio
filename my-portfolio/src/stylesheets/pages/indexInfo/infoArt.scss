@@ -26,98 +26,98 @@
         display: inline-block;
         &-point1 {
           position: relative;
-          left: 55px;
+          left: 47px;
           bottom: 10px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point2 {
           position: relative;
-          left: 72px;
-          bottom: 18px;
+          left: 56px;
+          bottom: 22px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point3 {
           position: relative;
-          left: 85px;
-          bottom: 20px;
+          left: 62px;
+          bottom: 29px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point4 {
           position: relative;
-          left: 90px;
-          bottom: 17px;
+          left: 62px;
+          bottom: 34px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point5 {
           position: relative;
-          left: 87px;
-          bottom: 15px;
+          left: 57px;
+          bottom: 41px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point6 {
           position: relative;
-          left: 77px;
-          bottom: 15px;
+          left: 48px;
+          bottom: 53px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point7 {
           position: relative;
-          left: 60px;
-          bottom: 21px;
+          left: 38px;
+          bottom: 69px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point8 {
           position: relative;
-          left: 40px;
-          bottom: 36px;
+          left: 27px;
+          bottom: 88px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point9 {
           position: relative;
-          left: 20px;
-          bottom: 58px;
+          left: 18px;
+          bottom: 112px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point10 {
           position: relative;
-          right: -4px;
-          bottom: 87px;
+          right: -11px;
+          bottom: 139px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point11 {
           position: relative;
-          left: -7px;
-          bottom: 120px;
+          left: 9px;
+          bottom: 168px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point12 {
           position: relative;
-          left: -11px;
-          bottom: 157px;
+          left: 12px;
+          bottom: 197px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point13 {
           position: relative;
-          left: -9px;
-          bottom: 193px;
+          left: 27px;
+          bottom: 226px;
           list-style-image: url(../../../assets/images/point.svg);
         }
-        &-point14 {
-          position: relative;
-          left: 1px;
-          bottom: 227px;
-          list-style-image: url(../../../assets/images/point.svg);
-        }
+        // &-point14 {
+        //   position: relative;
+        //   left: 1px;
+        //   bottom: 227px;
+        //   list-style-image: url(../../../assets/images/point.svg);
+        // }
         &-point15 {
           position: relative;
-          left: 15px;
-          bottom: 259px;
+          left: 18px;
+          bottom: 258px;
           list-style-image: url(../../../assets/images/point.svg);
         }
         &-point16 {
           position: relative;
-          left: 34px;
-          bottom: 281px;
+          left: 37px;
+          bottom: 282px;
           list-style-image: url(../../../assets/images/point.svg);
         }
       }
@@ -180,6 +180,48 @@
       border: 2px solid #ff8f71;
       right: 11px;
       top: 125px;
+    }
+  }
+  &__projects-lineH1 {
+    position: relative;
+    width: 88px;
+    left: 38px;
+    bottom: 235px;
+    display: inline-block;
+    border: 1px solid #040404;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    &-circle {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #ff8f71;
+      position: relative;
+      display: inline-block;
+      left: 88px;
+      top: -10px;
+    }
+  }
+  &__projects-lineH2 {
+    position: relative;
+    width: 85px;
+    height: 20px;
+    left: 38px;
+    bottom: 24px;
+    display: inline-block;
+    border-bottom: 1px solid #040404;
+    border-left: 1px solid #040404;
+    border-right: transparent;
+    &-circle2 {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #ff8f71;
+      position: relative;
+      display: inline-block;
+      left: 83px;
+      top: 9px;
     }
   }
 }

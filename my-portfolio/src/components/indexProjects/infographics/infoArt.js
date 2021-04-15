@@ -20,13 +20,16 @@ const InfoArt = () => {
             <li className="containerArt__circleArea-pointsArea-list-point11"></li>
             <li className="containerArt__circleArea-pointsArea-list-point12"></li>
             <li className="containerArt__circleArea-pointsArea-list-point13"></li>
-            <li className="containerArt__circleArea-pointsArea-list-point14"></li>
+            {/* <li className="containerArt__circleArea-pointsArea-list-point14"></li> */}
             <li className="containerArt__circleArea-pointsArea-list-point15"></li>
             <li className="containerArt__circleArea-pointsArea-list-point16"></li>
           </ul>
         </div>
-        <div className="containerArt__projects">
-          <div className="containerArt__projects-circle"></div>
+        <div className="containerArt__projects-lineH1">
+          <div className="containerArt__projects-lineH1-circle"></div>
+          <div className="containerArt__projects-lineH2">
+            <div className="containerArt__projects-lineH2-circle2"></div>
+          </div>
         </div>
       </div>
       <div className="containerArt__stackArea">
