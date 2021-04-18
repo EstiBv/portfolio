@@ -33,17 +33,19 @@
       font-family: "Roboto", sans-serif;
       font-weight: bold;
     }
-    &-text:hover {
-      color: $color-secondary;
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      font-weight: bolder;
-      transition: all 0.2s ease-in-out;
-    }
   }
   &__menu {
     display: flex;
   }
+}
+.linksSections {
+  text-decoration: none;
+  z-index: 1;
+}
+.linksSections:hover {
+  font-weight: bolder;
+  -webkit-text-decoration: line-through $color-secondary;
+  text-decoration: line-through #ff9071d5 5px;
 }
 
 // aside menu
