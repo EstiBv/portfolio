@@ -10,39 +10,43 @@ const Develop = () => {
       <header>
         <Header />
       </header>
-      <main>
-        <article>
-          <h2>
+      <main className="mainArea">
+        <section className="mainArea__legend" title="infographic legend">
+          <h2 className="mainArea__legend-stack">
             <span>33 </span>
             lenguaje
           </h2>
-          <h2>
+          <h2 className="mainArea__legend-area">
             <span>22 </span>
             stack
           </h2>
-          <h2>
+          <h2 className="mainArea__legend-project">
             <span>11 </span>
             herramientas
           </h2>
-          <figure>
+          <figure className="mainArea__legend-infography">
             <InfoDevelop />
           </figure>
-        </article>
-        <section>
-          <div className="backgroundImg">
-            <button className="button1">buton1</button>
-            <button className="button2">button2</button>
-            <div className="backgroundImg2">IMG</div>
+        </section>
+        <section className="mainArea__projectViewer" title="projects viewer">
+          <div className="mainArea__projectViewer-containerViewer">
+            <button
+              className="mainArea__projectViewer-containerViewer-btnPrevius"
+              aria-label="previous"
+            ></button>
+            <button
+              className="mainArea__projectViewer-containerViewer-btnNext"
+              aria-label="next"
+            ></button>
+            <div className="mainArea__projectViewer-containerViewer-img"></div>
           </div>
-          <article className="imgDescription">
+          <article className="mainArea__projectViewer-description">
             <h4>titulo</h4>
             <p>Descripcion</p>
           </article>
         </section>
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 };

@@ -9,50 +9,99 @@
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
-main {
+.mainArea {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-figure {
-  position: relative;
-  top: 100px;
-}
-.backgroundImg {
-  height: 15em;
-  width: 25em;
-  background-color: antiquewhite;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.backgroundImg2 {
-  height: 13em;
-  width: 23em;
-  background-color: paleturquoise;
-  margin-left: 1em;
-}
-.button1 {
-  align-self: end;
-  position: relative;
-  top: 110px;
-  right: 30px;
-}
-
-.button2 {
-  position: relative;
-  align-self: flex-end;
-  top: 90px;
-  left: 30px;
-}
-.imgDescription {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  &__legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &-infography {
+      position: relative;
+      top: 100px;
+    }
+  }
+  &__projectViewer {
+    height: 15em;
+    width: 25em;
+    background-color: $color-white;
+    box-shadow: 0px 0px 60px 0px $color-shadowPrimary;
+    border-radius: 0.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-containerViewer {
+      height: 13em;
+      width: 23em;
+      background-color: $color-lightMedium;
+      margin-left: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 0.2em;
+      &-btnPrevius {
+        align-self: end;
+        position: relative;
+        top: 105px;
+        right: 32px;
+        height: 3.5em;
+        width: 3.5em;
+        border-radius: 50%;
+        border-style: none;
+        background-color: $color-white;
+        background-image: url(../../assets/icons/arrow-pIzq.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1em;
+        box-shadow: 0px 0px 20px 0px $color-shadowPrimary;
+        cursor: pointer;
+      }
+      &-btnPrevius:hover {
+        background-color: $color-secondary;
+        background-image: url(../../assets/icons/arrow-nIzq.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1em;
+        box-shadow: 0px 0px 20px 0px $color-secondary;
+      }
+      &-btnNext {
+        left: 170px;
+        align-self: end;
+        position: relative;
+        top: 105px;
+        right: 35px;
+        height: 3.5em;
+        width: 3.5em;
+        border-radius: 50%;
+        border-style: none;
+        background-color: $color-white;
+        background-image: url(../../assets/icons/arrow-pDcha.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1em;
+        box-shadow: 0px 0px 20px 0px $color-shadowPrimary;
+        cursor: pointer;
+      }
+      &-btnNext:hover {
+        background-color: $color-secondary;
+        background-image: url(../../assets/icons/arrow-nDcha.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1em;
+        box-shadow: 0px 0px 20px 0px $color-secondary;
+      }
+      &-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    &-description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
 }
