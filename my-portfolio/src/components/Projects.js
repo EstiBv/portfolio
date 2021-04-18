@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Header";
-import Develop from "./indexProjects/Develop";
-import Design from "./indexProjects/Design";
-import Art from "./indexProjects/Art";
+import InfoDevelop from "../components/indexProjects/infographics/InfoDevelop";
+import InfoDesign from "../components/indexProjects/infographics/InfoDesign";
+import InfoArt from "../components/indexProjects/infographics/InfoArt";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../stylesheets/header.scss";
@@ -28,7 +28,7 @@ const Categories = () => {
               className="mainProjects__containerProjects-develop"
               role="img"
             >
-              <Develop />
+              <InfoDevelop />
               <figcaption className="mainProjects__containerProjects-text">
                 Develop
               </figcaption>
@@ -42,7 +42,7 @@ const Categories = () => {
               className="mainProjects__containerProjects-design"
               role="img"
             >
-              <Design />
+              <InfoDesign />
               <figcaption className="mainProjects__containerProjects-text">
                 Design
               </figcaption>
@@ -53,7 +53,7 @@ const Categories = () => {
             className="mainProjects__artProjects linksSections"
           >
             <figure className="mainProjects__containerProjects-art" role="img">
-              <Art />
+              <InfoArt />
               <figcaption className="mainProjects__containerProjects-text">
                 Art
               </figcaption>
