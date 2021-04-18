@@ -9,3 +9,50 @@
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+figure {
+  position: relative;
+  top: 100px;
+}
+.backgroundImg {
+  height: 15em;
+  width: 25em;
+  background-color: antiquewhite;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.backgroundImg2 {
+  height: 13em;
+  width: 23em;
+  background-color: paleturquoise;
+  margin-left: 1em;
+}
+.button1 {
+  align-self: end;
+  position: relative;
+  top: 110px;
+  right: 30px;
+}
+
+.button2 {
+  position: relative;
+  align-self: flex-end;
+  top: 90px;
+  left: 30px;
+}
+.imgDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
