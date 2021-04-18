@@ -1,7 +1,7 @@
 @import "../../\ core/variables.scss";
 
 .containerDevelop {
-  display: flex;
+  // display: flex;
   &__areaDevelop {
     height: 70px;
     width: 70px;
@@ -9,8 +9,8 @@
     background-color: $color-primary;
     z-index: 1;
     position: relative;
-    bottom: 35px;
-    left: -30px;
+    bottom: 165px;
+    left: 65px;
   }
   &__stackDevelop {
     width: 90px;
@@ -19,7 +19,7 @@
     border-radius: 100px 0 0 100px;
     border-right: thin;
     border-left: 2px dashed $color-primary;
-    border-top: 2px dashed $color-primary;
+    // border-top: 2px dashed $color-primary;
     border-bottom: 2px solid transparent;
     border-top: 2px dashed #040404;
 

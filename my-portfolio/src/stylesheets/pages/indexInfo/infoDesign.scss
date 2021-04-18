@@ -1,14 +1,19 @@
 @import "../../\ core/variables.scss";
 .containerDesign {
+  position: relative;
+  bottom: 100px;
   // margin-top: 50px;
-  display: inline-block;
-  &__contentDesign {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    top: 70px;
-  }
+  // display: inline-block;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // &__contentDesign {
+  //   // display: flex;
+  //   // flex-direction: row;
+  //   // justify-content: center;
+  //   // position: relative;
+  //   // top: 70px;
+  // }
   &__areaDevelop {
     height: 70px;
     width: 70px;
@@ -24,7 +29,7 @@
     width: 0px;
     height: 150px;
     right: 17px;
-    bottom: 100px;
+    // bottom: 100px;
     position: relative;
     display: inline-block;
     border-left: 2px dashed $color-primary;
@@ -45,12 +50,17 @@
       top: 29px;
     }
   }
-
+  &__areaLinesAndBoxes {
+    position: relative;
+    right: 50px;
+    top: 150px;
+  }
   &__lineH1 {
     position: relative;
     width: 160px;
-    left: 40px;
-    display: inline-block;
+    height: 0;
+    left: -24px;
+    // display: inline-block;
     border: 1px solid $color-primary;
     border-bottom: transparent;
     border-left: transparent;
@@ -77,9 +87,10 @@
   &__lineV2 {
     position: relative;
     // display: inline-block;
-    left: 50px;
-    bottom: 66px;
+    // left: 50px;
+    bottom: 40px;
     height: 40px;
+    width: 0;
     border: 1px solid $color-primary;
     border-top: transparent;
     border-right: transparent;
@@ -97,8 +108,9 @@
   &__lineV3 {
     position: relative;
     bottom: 85px;
-    left: 150px;
+    left: 110px;
     height: 90px;
+    width: 0;
     border: 1px solid $color-primary;
     border-bottom: transparent;
     border-top: transparent;
@@ -124,9 +136,10 @@
   &__lineD4 {
     position: relative;
     // display: inline-block;
-    bottom: 180px;
-    left: 151px;
+    bottom: 133px;
+    left: 123px;
     height: 50px;
+    width: 0;
     border: 1px solid black;
     transform: rotate(-30deg);
     border-bottom: transparent;
