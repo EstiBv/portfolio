@@ -29,7 +29,7 @@ const Categories = () => {
               role="img"
             >
               <Develop />
-              <figcaption className="mainProjects__containerProjects-textDev">
+              <figcaption className="mainProjects__containerProjects-text">
                 Develop
               </figcaption>
             </figure>
@@ -43,7 +43,7 @@ const Categories = () => {
               role="img"
             >
               <Design />
-              <figcaption className="mainProjects__containerProjects-textDes">
+              <figcaption className="mainProjects__containerProjects-text">
                 Design
               </figcaption>
             </figure>
@@ -54,7 +54,7 @@ const Categories = () => {
           >
             <figure className="mainProjects__containerProjects-art" role="img">
               <Art />
-              <figcaption className="mainProjects__containerProjects-textArt">
+              <figcaption className="mainProjects__containerProjects-text">
                 Art
               </figcaption>
             </figure>
