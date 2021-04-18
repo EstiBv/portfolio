@@ -11,8 +11,10 @@ import "../stylesheets/projects.scss";
 const Categories = () => {
   return (
     <>
+      <header>
+        <Header />
+      </header>
       <main className="mainProjects">
-        <Header className="mainProjects__home" />
         <nav
           className="mainProjects__containerProjects"
           role="navigation"

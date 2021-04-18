@@ -1,13 +1,15 @@
 @import "./\ core/variables.scss";
-.homeHeaderProjects {
-  width: 100vw;
-  height: 15vh;
-  background-color: transparent;
-  background-image: url("../assets/icons/isoEB-ngicons.svg");
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
-  margin: 20px 0px 0px 40px;
-  border: none;
-  outline: none;
+.burger {
+  display: inline-block;
+  &_buttonHome {
+    background-color: transparent;
+    background-image: url("../assets/icons/isoEB-ngicons.svg");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    margin: 20px 0px 0px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 }
