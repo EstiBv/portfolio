@@ -12,17 +12,17 @@ const Develop = () => {
       </header>
       <main className="mainArea">
         <section className="mainArea__legend" title="infographic legend">
-          <h2 className="mainArea__legend-stack">
-            <span>33 </span>
+          <h2 className="mainArea__legend-tools">
+            <span className="mainArea__legend-tools-language"></span>
             lenguaje
           </h2>
-          <h2 className="mainArea__legend-area">
-            <span>22 </span>
-            stack
+          <h2 className="mainArea__legend-stack">
+            <span className="mainArea__legend-stack-tech"> </span>
+            proyecto
           </h2>
-          <h2 className="mainArea__legend-project">
-            <span>11 </span>
-            herramientas
+          <h2 className="mainArea__legend-area">
+            <span className="mainArea__legend-area-circle"> </span>
+            área
           </h2>
           <figure className="mainArea__legend-infography">
             <InfoDevelop />

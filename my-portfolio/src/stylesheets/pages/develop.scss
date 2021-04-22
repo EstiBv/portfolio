@@ -10,36 +10,64 @@
   transition: all 0.3s ease-in-out;
 }
 .mainArea {
+  height: 80vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+
   &__legend {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    &-stack {
+      &-tech {
+        border-style: solid;
+        margin-left: 0.15em;
+        border-width: 13px 0px 13px 13px;
+        border-color: transparent transparent transparent rgb(0, 0, 0);
+        position: relative;
+        display: inline-block;
+        top: 0.15em;
+        margin-right: 1.05em;
+      }
+    }
+    &-tools {
+      &-language {
+        height: 25px;
+        width: 4px;
+        background-color: #040404;
+        position: relative;
+        left: 0.2em;
+        top: 0.35em;
+        display: inline-block;
+        margin-right: 1.6em;
+        transform: rotate(0.25turn);
+      }
+    }
+    &-area {
+      &-circle {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #040404;
+        display: inline-block;
+        margin-right: 0.8em;
+        position: relative;
+        top: 0.25em;
+      }
+    }
     &-infography {
       position: relative;
-      top: 100px;
+      top: 3.15em;
     }
   }
   &__projectViewer {
-    height: 15em;
-    width: 25em;
-    background-color: $color-white;
-    box-shadow: 0px 0px 60px 0px $color-shadowPrimary;
-    border-radius: 0.5em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     &-containerViewer {
       height: 13em;
       width: 23em;
       background-color: $color-lightMedium;
-      margin-left: 1em;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      box-shadow: 0px 0px 60px 0px #69c7c783;
+      margin-bottom: 1em;
       border-radius: 0.2em;
       &-btnPrevius {
         align-self: end;
@@ -67,7 +95,7 @@
         box-shadow: 0px 0px 20px 0px $color-secondary;
       }
       &-btnNext {
-        left: 170px;
+        left: 305px;
         align-self: end;
         position: relative;
         top: 105px;
