@@ -63,7 +63,7 @@
   }
   &__projectViewer {
     &-containerViewer {
-      height: 13em;
+      height: 16em;
       width: 23em;
       background-color: $color-lightMedium;
       box-shadow: 0px 1px 25px 20px #bcfff9;
@@ -123,9 +123,14 @@
         box-shadow: 0px 0px 20px 0px $color-secondary;
       }
       &-img {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        background-image: url(../../assets/images/project01.png);
+        background-position: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 16em;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-around;
       }
     }
     &-description {

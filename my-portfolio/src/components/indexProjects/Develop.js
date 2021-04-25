@@ -30,15 +30,16 @@ const Develop = () => {
         </section>
         <section className="mainArea__projectViewer" title="projects viewer">
           <div className="mainArea__projectViewer-containerViewer">
-            <button
-              className="mainArea__projectViewer-containerViewer-btnPrevius"
-              aria-label="previous"
-            ></button>
-            <button
-              className="mainArea__projectViewer-containerViewer-btnNext"
-              aria-label="next"
-            ></button>
-            <div className="mainArea__projectViewer-containerViewer-img"></div>
+            <div className="mainArea__projectViewer-containerViewer-img">
+              <button
+                className="mainArea__projectViewer-containerViewer-btnPrevius"
+                aria-label="previous"
+              ></button>
+              <button
+                className="mainArea__projectViewer-containerViewer-btnNext"
+                aria-label="next"
+              ></button>
+            </div>
           </div>
           <article className="mainArea__projectViewer-description">
             <h4>Título</h4>
