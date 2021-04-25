@@ -31,6 +31,15 @@ const Develop = () => {
         <section className="mainArea__projectViewer" title="projects viewer">
           <div className="mainArea__projectViewer-containerViewer">
             <div className="mainArea__projectViewer-containerViewer-img">
+              <a
+                href="https://github.com/EstiBv/task-schedule"
+                title="go to project's repository"
+                rel="noreferrer"
+                target="_blank"
+                className="mainArea__projectViewer-containerViewer-img-linkGitHub"
+              >
+                Ir al repositorio del proyecto
+              </a>
               <button
                 className="mainArea__projectViewer-containerViewer-btnPrevius"
                 aria-label="previous"

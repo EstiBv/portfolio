@@ -70,10 +70,9 @@
       margin-bottom: 4em;
       border-radius: 0.2em;
       &-btnPrevius {
-        align-self: end;
         position: relative;
-        top: 105px;
-        right: 27px;
+        right: 2em;
+        bottom: 10em;
         height: 3.5em;
         width: 3.5em;
         border-radius: 50%;
@@ -96,11 +95,9 @@
         box-shadow: 0px 0px 20px 0px $color-secondary;
       }
       &-btnNext {
-        left: 305px;
-        align-self: end;
         position: relative;
-        top: 105px;
-        right: 35px;
+        bottom: 10em;
+        left: 23em;
         height: 3.5em;
         width: 3.5em;
         border-radius: 50%;
@@ -128,9 +125,22 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 16em;
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-around;
+        border-radius: 0.2em;
+        &-linkGitHub {
+          display: block;
+          opacity: 0.2;
+          text-decoration: none;
+          cursor: pointer;
+          height: 16em;
+          width: 23em;
+          color: #bcfff9;
+          background-color: #bcfff9;
+        }
+        &-linkGitHub:hover {
+          opacity: 0;
+          text-decoration: none;
+          cursor: pointer;
+        }
       }
     }
     &-description {
