@@ -2,7 +2,7 @@
 
 // section container projects
 .mainProjects {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: flex-end;
   &__artProjects {
@@ -60,10 +60,6 @@
   grid-gap: 5px;
   &-linkProjects {
     text-decoration: none;
-    background-image: url("../assets/icons/work-nicons.svg");
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    width: 25px;
     grid-column: 2;
     grid-row: 2;
     &-projects {
@@ -82,27 +78,25 @@
       transition: all 0.3s ease-in-out;
     }
   }
-  &-linkProjects:hover {
-    background-image: url("../assets/icons/work-picons.svg");
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-  }
-
   &-linkAbout {
     text-decoration: none;
-    background-image: url("../assets/icons/about-nicons.svg");
-    background-repeat: no-repeat;
-    height: 75px;
-    width: 25px;
     grid-column: 2;
     grid-row: 4;
     text-align: center;
     &-about {
+      text-decoration: none;
+      background-image: url("../assets/icons/about-nicons.svg");
+      background-repeat: no-repeat;
+      background-position-y: 2em;
+      background-position-x: 1em;
+      background-size: 2.5em;
+      height: 4.5em;
+      width: 4em;
       color: $color-primary;
       font-size: 12px;
       font-family: "Roboto", sans-serif;
       position: relative;
-      top: 35px;
+      top: 0px;
     }
     &-about:hover {
       color: $color-secondary;
@@ -110,10 +104,5 @@
       transform: scale(1.05);
       transition: all 0.3s ease-in-out;
     }
-  }
-  &-linkAbout:hover {
-    background-image: url("../assets/icons/about-picons.svg");
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
   }
 }

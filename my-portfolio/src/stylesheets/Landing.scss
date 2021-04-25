@@ -50,60 +50,64 @@
   grid-gap: 5px;
   &-linkProjects {
     text-decoration: none;
-    background-image: url("../assets/icons/work-nicons.svg");
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    width: 25px;
     grid-column: 2;
     grid-row: 2;
     &-projects {
-      color: $color-primary;
+      background-image: url("../assets/icons/work-nicons.svg");
+      background-repeat: no-repeat;
+      background-position-y: 2em;
+      background-position-x: 1em;
+      background-size: 2.5em;
+      color: #040404;
       font-family: "Roboto", sans-serif;
       font-size: 12px;
       font-weight: 400;
       position: relative;
       bottom: 25px;
       right: 15px;
+      height: 4.5em;
+      width: 4em;
     }
     &-projects:hover {
+      background-image: url("../assets/icons/work-picons.svg");
+      background-repeat: no-repeat;
+      background-position-y: 2em;
+      background-position-x: 1em;
       color: $color-secondary;
       font-weight: 700;
       transform: scale(1.05);
       transition: all 0.3s ease-in-out;
     }
   }
-  &-linkProjects:hover {
-    background-image: url("../assets/icons/work-picons.svg");
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-  }
   &-linkAbout {
     text-decoration: none;
-    background-image: url("../assets/icons/about-nicons.svg");
-    background-repeat: no-repeat;
-    height: 75px;
-    width: 25px;
     grid-column: 2;
     grid-row: 4;
-    text-align: center;
     &-about {
+      text-decoration: none;
+      background-image: url("../assets/icons/about-nicons.svg");
+      background-repeat: no-repeat;
+      background-position-y: 2em;
+      background-position-x: 1em;
+      background-size: 2.5em;
+      height: 4.5em;
+      width: 4em;
       color: $color-primary;
       font-size: 12px;
       font-family: "Roboto", sans-serif;
       position: relative;
-      top: 35px;
+      top: 0px;
     }
     &-about:hover {
+      background-image: url("../assets/icons/about-picons.svg");
+      background-repeat: no-repeat;
+      background-position-y: 2em;
+      background-position-x: 1em;
       color: $color-secondary;
       font-weight: 700;
       transform: scale(1.05);
       transition: all 0.3s ease-in-out;
     }
-  }
-  &-linkAbout:hover {
-    background-image: url("../assets/icons/about-picons.svg");
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
   }
 }
 
