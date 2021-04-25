@@ -66,14 +66,14 @@
       height: 13em;
       width: 23em;
       background-color: $color-lightMedium;
-      box-shadow: 0px 0px 60px 0px #69c7c783;
-      margin-bottom: 1em;
+      box-shadow: 0px 1px 25px 20px #bcfff9;
+      margin-bottom: 4em;
       border-radius: 0.2em;
       &-btnPrevius {
         align-self: end;
         position: relative;
         top: 105px;
-        right: 32px;
+        right: 27px;
         height: 3.5em;
         width: 3.5em;
         border-radius: 50%;
@@ -85,6 +85,7 @@
         background-size: 1em;
         box-shadow: 0px 0px 20px 0px $color-shadowPrimary;
         cursor: pointer;
+        outline: inherit;
       }
       &-btnPrevius:hover {
         background-color: $color-secondary;
@@ -111,6 +112,7 @@
         background-size: 1em;
         box-shadow: 0px 0px 20px 0px $color-shadowPrimary;
         cursor: pointer;
+        outline: inherit;
       }
       &-btnNext:hover {
         background-color: $color-secondary;

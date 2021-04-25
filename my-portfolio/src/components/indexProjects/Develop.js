@@ -41,8 +41,8 @@ const Develop = () => {
             <div className="mainArea__projectViewer-containerViewer-img"></div>
           </div>
           <article className="mainArea__projectViewer-description">
-            <h4>titulo</h4>
-            <p>Descripcion</p>
+            <h4>Título</h4>
+            <p>Descripción</p>
           </article>
         </section>
       </main>
