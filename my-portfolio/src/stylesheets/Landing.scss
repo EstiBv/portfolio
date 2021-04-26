@@ -6,18 +6,35 @@
 }
 .home {
   background-color: transparent;
-  background-image: url("../assets/icons/home-nicons.svg");
+  background-image: url("../assets/icons/Iso-nicons.svg");
   background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
-  margin: 20px 0px 0px 40px;
+  background-size: 2.9em;
+  background-position: bottom;
+  background-position-y: 5.3em;
+  background-position-x: 0.5em;
+  height: 8em;
+  width: 4.2em;
+  margin: 0 0 0 2em;
   border: none;
   outline: none;
+  position: relative;
+  bottom: 2.5em;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7em;
+}
+.home:hover {
+  background-image: url("../assets/icons/Iso-picons.svg");
+  color: $color-secondary;
+  font-weight: 900;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 // section container projects
 .mainLanding {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   &__isotype {
     display: flex;
@@ -31,27 +48,24 @@
     background-repeat: no-repeat;
     align-self: center;
     background-position: center;
-    height: 45vh;
-    width: 45vh;
+    height: 15em;
+    width: 15em;
   }
   &__menu {
-    display: flex;
+    display: inline;
+    align-self: flex-end;
   }
 }
 
-// aside menu
+// nav menu
 .menu__list {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   list-style-type: none;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 5px;
   &-linkProjects {
     text-decoration: none;
-    grid-column: 2;
-    grid-row: 2;
     &-projects {
       background-image: url("../assets/icons/work-nicons.svg");
       background-repeat: no-repeat;
@@ -60,13 +74,13 @@
       background-size: 2.5em;
       color: #040404;
       font-family: "Roboto", sans-serif;
-      font-size: 12px;
-      font-weight: 400;
+      font-size: 0.7em;
+      // font-weight: 400;
       position: relative;
-      bottom: 25px;
-      right: 15px;
       height: 4.5em;
       width: 4em;
+      margin-right: 4em;
+      margin-top: 1em;
     }
     &-projects:hover {
       background-image: url("../assets/icons/work-picons.svg");
@@ -81,22 +95,21 @@
   }
   &-linkAbout {
     text-decoration: none;
-    grid-column: 2;
-    grid-row: 4;
     &-about {
-      text-decoration: none;
       background-image: url("../assets/icons/about-nicons.svg");
       background-repeat: no-repeat;
       background-position-y: 2em;
       background-position-x: 1em;
       background-size: 2.5em;
-      height: 4.5em;
-      width: 4em;
       color: $color-primary;
-      font-size: 12px;
       font-family: "Roboto", sans-serif;
+      font-size: 0.7em;
       position: relative;
       top: 0px;
+      height: 4.5em;
+      width: 4em;
+      margin-right: 4em;
+      margin-top: 1em;
     }
     &-about:hover {
       background-image: url("../assets/icons/about-picons.svg");
@@ -112,33 +125,62 @@
 }
 
 // MEDIAQUERIES
-// large phones
-// @media all and (min-width: 600px) {
-// }
 
 // tablets
 @media all and (min-width: 768px) {
-  .main {
+  .home {
+    background-size: 3.5em;
+    background-position-y: 6.3em;
+    background-position-x: 0.1em;
+    height: 9.5em;
+    width: 4.6em;
+    font-size: 1em;
+  }
+  .mainLanding {
+    flex-direction: row-reverse;
     &__infographic {
-      height: 60vh;
-      width: 60vh;
+      height: 24em;
+      width: 24em;
     }
-    &__menu-list {
-      grid-template-columns: repeat(6, 1fr);
-      grid-gap: 2px;
-      grid-template-rows: repeat(5, 1fr);
+    &__menu {
+      align-self: center;
+      height: 18em;
+    }
+  }
+  .menu__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2px;
+    grid-template-rows: repeat(3, 1fr);
+    &-linkProjects {
+      grid-column: 2;
+      grid-row: 1;
       &-projects {
-        grid-column: 3;
-        grid-row: 2;
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 1em;
       }
+    }
+    &-linkAbout {
+      grid-column: 2;
+      grid-row: 3;
       &-about {
-        grid-column: 3;
-        grid-row: 4;
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 1em;
       }
     }
   }
 }
-// // @media all and (min-width: 992px) {
+
+// @media all and (min-width: 1024px) {
+//   .mainLanding {
+//     flex-direction: row-reverse;
+//     &__infographic {
+//       height: 26em;
+//       width: 26em;
+//     }
+//   }
 // }
-// @media all and (min-width: 1200px) {
+// @media all and (min-width: 1920px) {
 // }

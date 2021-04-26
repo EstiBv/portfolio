@@ -11,17 +11,10 @@ const Landing = (props) => {
   return (
     <>
       <header className="header">
-        <button className="home">{/* <a href="/"></a> */}</button>
+        <button className="home">{/* <a href="/"></a> */}Home</button>
       </header>
       <main className="mainLanding">
-        <section
-          className="mainLanding__isotype"
-          role="figure"
-          aria-labelledby="author's isotype"
-        >
-          <figure className="mainLanding__infographic"></figure>
-        </section>
-        <aside
+        <nav
           className="mainLanding__menu"
           aria-labelledby="menu"
           role="navigation"
@@ -29,13 +22,20 @@ const Landing = (props) => {
         >
           <ul className="menu__list">
             <Link to="/projects" className="menu__list-linkProjects">
-              <li className="menu__list-linkProjects-projects"> Proyectos</li>
+              <li className="menu__list-linkProjects-projects">Proyectos</li>
             </Link>
             <Link to="/about" className="menu__list-linkAbout">
-              <li className="menu__list-linkAbout-about"> Sobre mí</li>
+              <li className="menu__list-linkAbout-about">Sobre mí</li>
             </Link>
           </ul>
-        </aside>
+        </nav>
+        <section
+          className="mainLanding__isotype"
+          role="figure"
+          aria-labelledby="author's isotype"
+        >
+          <figure className="mainLanding__infographic"></figure>
+        </section>
       </main>
       <Footer />
     </>

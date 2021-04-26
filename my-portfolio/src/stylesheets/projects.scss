@@ -49,60 +49,99 @@
 }
 
 // aside menu
-.menu__list {
-  margin-right: 40px;
-  list-style: none;
-  list-style-type: none;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 5px;
-  &-linkProjects {
-    text-decoration: none;
-    grid-column: 2;
-    grid-row: 2;
-    &-projects {
-      color: $color-primary;
-      font-family: "Roboto", sans-serif;
-      font-size: 12px;
-      font-weight: 400;
-      position: relative;
-      bottom: 25px;
-      right: 15px;
+// .menu__list {
+//   margin-right: 40px;
+//   list-style: none;
+//   list-style-type: none;
+//   text-align: center;
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-template-rows: repeat(5, 1fr);
+//   grid-gap: 5px;
+//   &-linkProjects {
+//     text-decoration: none;
+//     grid-column: 2;
+//     grid-row: 2;
+//     &-projects {
+//       color: $color-primary;
+//       font-family: "Roboto", sans-serif;
+//       font-size: 12px;
+//       font-weight: 400;
+//       position: relative;
+//       bottom: 25px;
+//       right: 15px;
+//     }
+//     &-projects:hover {
+//       color: $color-secondary;
+//       font-weight: 700;
+//       transform: scale(1.05);
+//       transition: all 0.3s ease-in-out;
+//     }
+//   }
+//   &-linkAbout {
+//     text-decoration: none;
+//     grid-column: 2;
+//     grid-row: 4;
+//     text-align: center;
+//     &-about {
+//       text-decoration: none;
+//       background-image: url("../assets/icons/about-nicons.svg");
+//       background-repeat: no-repeat;
+//       background-position-y: 2em;
+//       background-position-x: 1em;
+//       background-size: 2.5em;
+//       height: 4.5em;
+//       width: 4em;
+//       color: $color-primary;
+//       font-size: 12px;
+//       font-family: "Roboto", sans-serif;
+//       position: relative;
+//       top: 0px;
+//     }
+//     &-about:hover {
+//       color: $color-secondary;
+//       font-weight: 700;
+//       transform: scale(1.05);
+//       transition: all 0.3s ease-in-out;
+//     }
+//   }
+// }
+
+// MEDIAQUERIES
+
+// tablets
+@media all and (min-width: 768px) {
+  .mainProjects {
+    &__infographic {
+      height: 18em;
+      width: 18em;
     }
-    &-projects:hover {
-      color: $color-secondary;
-      font-weight: 700;
-      transform: scale(1.05);
-      transition: all 0.3s ease-in-out;
+    &__menu {
+      align-self: center;
     }
   }
-  &-linkAbout {
-    text-decoration: none;
-    grid-column: 2;
-    grid-row: 4;
-    text-align: center;
-    &-about {
-      text-decoration: none;
-      background-image: url("../assets/icons/about-nicons.svg");
-      background-repeat: no-repeat;
-      background-position-y: 2em;
-      background-position-x: 1em;
-      background-size: 2.5em;
-      height: 4.5em;
-      width: 4em;
-      color: $color-primary;
-      font-size: 12px;
-      font-family: "Roboto", sans-serif;
-      position: relative;
-      top: 0px;
+  .menu__list {
+    position: absolute;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    grid-template-rows: repeat(3, 1fr);
+    &-linkProjects {
+      grid-column: 2;
+      grid-row: 1;
+      &-projects {
+        grid-column: 2;
+        grid-row: 1;
+      }
     }
-    &-about:hover {
-      color: $color-secondary;
-      font-weight: 700;
-      transform: scale(1.05);
-      transition: all 0.3s ease-in-out;
+    &-linkAbout {
+      grid-column: 2;
+      grid-row: 3;
+      &-about {
+        grid-column: 2;
+        grid-row: 3;
+      }
     }
   }
 }
