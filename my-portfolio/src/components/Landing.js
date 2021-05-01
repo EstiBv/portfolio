@@ -14,7 +14,7 @@ const Landing = (props) => {
         <button className="home">{/* <a href="/"></a> */}Home</button>
       </header>
       <main className="mainLanding">
-        <nav
+        <aside
           className="mainLanding__menu"
           aria-labelledby="menu"
           role="navigation"
@@ -25,10 +25,10 @@ const Landing = (props) => {
               <li className="menu__list-linkProjects-projects">Proyectos</li>
             </Link>
             <Link to="/about" className="menu__list-linkAbout">
-              <li className="menu__list-linkAbout-about">Sobre mí</li>
+              <li className="menu__list-linkAbout-about"> Sobre mí</li>
             </Link>
           </ul>
-        </nav>
+        </aside>
         <section
           className="mainLanding__isotype"
           role="figure"

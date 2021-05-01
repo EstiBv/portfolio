@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../stylesheets/header.scss";
 import "../stylesheets/projects.scss";
+import "../stylesheets/Landing.scss";
 
 const Categories = () => {
   return (
@@ -65,12 +66,15 @@ const Categories = () => {
           aria-labelledby="menu"
           role="navigation"
         >
-          <ul className="menu__list">
-            <Link to="/projects" className="menu__list-linkProjects">
-              <li className="menu__list-linkProjects-projects"> Proyectos</li>
+          <ul className="menu__listPyA">
+            <Link to="/projects" className="menu__listPyA-linkProjectsPyA">
+              <li className="menu__listPyA-linkProjectsPyA-projectsPyA">
+                {" "}
+                Proyectos
+              </li>
             </Link>
-            <Link to="/about" className="menu__list-linkAbout">
-              <li className="menu__list-linkAbout-about"> Sobre mí</li>
+            <Link to="/about" className="menu__listPyA-linkAboutPyA">
+              <li className="menu__listPyA-linkAboutPyA-aboutPyA"> Sobre mí</li>
             </Link>
           </ul>
         </aside>

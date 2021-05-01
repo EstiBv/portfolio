@@ -1,4 +1,5 @@
 @import "./\ core/variables.scss";
+
 .header {
   background-color: $color-primary;
   width: 100vw;
@@ -30,6 +31,7 @@
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+
 // section container projects
 .mainLanding {
   height: 100vh;
@@ -75,7 +77,6 @@
       color: #040404;
       font-family: "Roboto", sans-serif;
       font-size: 0.7em;
-      // font-weight: 400;
       position: relative;
       height: 4.5em;
       width: 4em;
@@ -125,7 +126,6 @@
 }
 
 // MEDIAQUERIES
-
 // tablets
 @media all and (min-width: 768px) {
   .home {
@@ -143,30 +143,25 @@
       width: 24em;
     }
     &__menu {
-      align-self: center;
-      height: 18em;
+      height: 100vh;
     }
   }
   .menu__list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2px;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     &-linkProjects {
       grid-column: 2;
-      grid-row: 1;
+      grid-row: 3;
       &-projects {
-        grid-column: 2;
-        grid-row: 1;
         font-size: 1em;
       }
     }
     &-linkAbout {
       grid-column: 2;
-      grid-row: 3;
+      grid-row: 6;
       &-about {
-        grid-column: 2;
-        grid-row: 3;
         font-size: 1em;
       }
     }
