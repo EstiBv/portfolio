@@ -149,7 +149,7 @@
   .menu__list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2px;
+    grid-gap: 1.5em;
     grid-template-rows: repeat(6, 1fr);
     &-linkProjects {
       grid-column: 2;
