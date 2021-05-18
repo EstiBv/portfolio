@@ -19,6 +19,7 @@
     width: 70%;
     &-develop {
       display: flex;
+      margin: 3.5em 0 3em 0;
       // flex-direction: column-reverse;
       // //
       // flex-direction: column;
@@ -47,11 +48,32 @@
       transition: all 0.3s ease-in-out;
       transform: scale(1.3);
     }
-    &-text {
+    &-textDevelop {
       color: $color-primary;
       text-align: center;
       font-family: "Roboto", sans-serif;
       font-weight: bold;
+      position: relative;
+      right: 12em;
+      top: 5em;
+    }
+    &-textDesign {
+      color: $color-primary;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      position: relative;
+      right: 9em;
+      bottom: 7.2em;
+    }
+    &-textArt {
+      color: $color-primary;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      position: relative;
+      right: 9.7em;
+      bottom: 8em;
     }
   }
   &__menu {
